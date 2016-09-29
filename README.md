@@ -25,9 +25,20 @@ i.v.m. MSTest:
 i.v.m. Files en Directories:
 
 - Wat is het voordeel van `Path.Combine` i.v.m. strings aan elkaar plakken?
+
+> Je voegt 2 Paths aan elkaar. Men gebruikt Path.Combine om een nieuw bestand te maken.
+
 - Wordt de return-waarde van `Directory.CreateDirectory(...)` steeds opgevangen? (TIP: gebruik `CTRL-SHIFT-F`)
+
+> Ja, voor tests uit te voeren.
+
 - Wat is de return-waarde van `Directory.CreateDirectory(...)`?
+
+> Het komt in een bool terecht afhangend of het bestaat of niet is het True of False.
+
 - Wanneer is het nuttig om de return-waarde van `Directory.CreateDirectory(...)` op te vangen?
+
+> Om te zien of een bepaalde method werkt.
 
 i.v.m. duidelijkheid/geschiedenis van de code:
 
