@@ -7,9 +7,20 @@ Probeer volgende vragen te beantwoorden:
 i.v.m. MSTest:
 
 - Welke Assert-methods worden naast `Assert.AreEqual` nog allemaal gebruikt?
+
+> Assert.IsTrue & Assert.IsFalse
+
 - Waarom heeft `TestDirectories` een `Initialize`- en `CleanUp`-method?
+
+> Om te checken of de directory en de files erin zijn verwijdert van de aangemaakte map.
+
 - Zijn de attributen `[TestMethod]`, `[TestClass]`, ... noodzakelijk? (Test uit!)
+
+> Ja ze zijn noodzakelijk! Anders krijg je een foutmelding.
+
 - Wat is de shortcut om alle tests uit te voeren in VS?
+
+> Ctrl R, Ctrl A
 
 i.v.m. Files en Directories:
 
