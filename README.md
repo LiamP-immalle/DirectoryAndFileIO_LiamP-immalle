@@ -38,13 +38,24 @@ i.v.m. Files en Directories:
 
 - Wanneer is het nuttig om de return-waarde van `Directory.CreateDirectory(...)` op te vangen?
 
-> Om te zien of een bepaalde method werkt.
+> Om te zien of een bepaalde method 'Directory.CreateDirectory() werkt.
 
 i.v.m. duidelijkheid/geschiedenis van de code:
 
 - Lukken de testen in de commit 3ffe2c86? Waarom (niet)?
+
+> Nee, Expect en Assert zijn omgewisseld.
+
 - Wat lost commit d0320b6a op?
+
+> Dat het niet meer omgewisseld is.
+
 - Wat is het probleem met de files in commit 9d184949?
+
+> Niet genoeg uitgewerkt
+
 - Wat doet commit 9b3e4065? Maakt dit de code makkelijker leesbaar? Makkelijker uitbreidbaar?
+
+> Steekt het in aparte lege variabelen. en maakt de code leesbaarder.
 
 
