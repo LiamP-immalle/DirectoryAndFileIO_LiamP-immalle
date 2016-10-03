@@ -61,6 +61,17 @@ namespace DirectoriesAndFileIO
         }
 
         [TestMethod]
+        public void FileOpenText()
+        {
+            StreamReader s = File.OpenText(fileA);
+            string txt = "";
+            txt = s.ReadLine();
+
+            Assert.AreEqual(fileAContents, txt);
+            s.Close();
+        }
+
+        [TestMethod]
         public void TestStreamReader()
         {
             StreamReader s = new StreamReader(fileA);
@@ -93,6 +104,7 @@ namespace DirectoriesAndFileIO
 
             stream.Close();
         }
+       
 
     }
 }
