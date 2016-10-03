@@ -104,7 +104,12 @@ namespace DirectoriesAndFileIO
 
             stream.Close();
         }
-       
+
+        [TestMethod]
+        public void TestReadAllText()
+        {
+
+        }
 
     }
 }
