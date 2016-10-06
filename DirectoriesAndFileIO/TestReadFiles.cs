@@ -49,6 +49,16 @@ namespace DirectoriesAndFileIO
         {
             string txt = File.ReadAllText(fileA);
             Assert.AreEqual(fileAContents, txt);
+
+
+            StreamReader s = new StreamReader(fileB);
+
+            string txt2 = s.ReadToEnd();
+            Assert.AreEqual(fileBContents, txt2);
+
+            s.Close();
+
+
         }
 
         [TestMethod]
@@ -58,6 +68,11 @@ namespace DirectoriesAndFileIO
 
             Assert.AreEqual(1, lines.Length);
             Assert.AreEqual(fileAContents, lines[0]);
+
+            string[] lines2 = File.ReadAllLines(fileB);
+
+            Assert.AreEqual(1, lines2.Length);
+            Assert.AreEqual(fileBContents, lines2[0]);
         }
 
         [TestMethod]
@@ -104,12 +119,5 @@ namespace DirectoriesAndFileIO
 
             stream.Close();
         }
-
-        [TestMethod]
-        public void TestReadAllText()
-        {
-
-        }
-
     }
 }
